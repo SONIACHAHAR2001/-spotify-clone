@@ -6,6 +6,91 @@ body{
     overflow: hidden;
 }
 
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  padding: 10px 20px;
+}
+
+/* HOME BUTTON */
+.home-btn {
+  width: 40px;
+  height: 40px;
+  background: #1f1f1f;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.home-btn:hover {
+  background: #2a2a2a;
+}
+
+/* SEARCH BAR */
+.search-container {
+  display: flex;
+  align-items: center;
+  background: #1f1f1f;
+  border-radius: 30px;
+  padding: 10px 15px;
+  width: 500px;
+  gap: 10px;
+}
+
+.search-container:hover {
+  background: #2a2a2a;
+}
+
+/* INPUT */
+.search-container input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: white;
+  font-size: 14px;
+}
+
+/* PLACEHOLDER */
+.search-container input::placeholder {
+  color: #b3b3b3;
+}
+
+/* DIVIDER */
+.divider {
+  width: 1px;
+  height: 20px;
+  background: #555;
+}
+
+/* ICONS */
+.search-icon,
+.browse-icon {
+  cursor: pointer;
+}
+
+/* HOVER EFFECT */
+.browse-icon:hover path,
+.browse-icon:hover rect,
+.browse-icon:hover circle {
+  stroke: white;
+  fill: white;
+}
+
+.search-icon:hover circle,
+.search-icon:hover line {
+  stroke: white;
+  fill: white;
+}
+
+
+
 .main{
     display: flex;
     height: 100vh;
@@ -42,9 +127,8 @@ a{
     background-color: #121212;
     border-radius: 1rem;
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    height: 100px;
+    height: 40px;
     padding: 0.5rem 0.75rem;
 
 }
