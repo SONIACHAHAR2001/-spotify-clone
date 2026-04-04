@@ -170,7 +170,7 @@ body{
 
 .sidebar{
     background-color: black;
-    width: 340px;
+    width: 400px;
     border-radius: 1rem;
     margin-right: 0.5rem;
 }
@@ -180,7 +180,7 @@ body{
     flex: 1;
     border-radius: 1rem;
     overflow: auto;
-    padding: 0 1.5rem 0 1.5rem;
+    /* padding: 0 1.5rem 0 1.5rem; */
 }
 
 .music-player{
@@ -196,15 +196,7 @@ a{
     color: #fff;
 }
 
-/* .nav{
-    background-color: #121212;
-    border-radius: 1rem;
-    display: flex;
-    justify-content: center;
-    height: 40px;
-    padding: 0.5rem 0.75rem;
 
-} */
 
 .nav-option{
     line-height: 2.5rem;
@@ -320,6 +312,14 @@ a{
 
 }
 
+.main-heading{
+    margin-left: 2rem;
+}
+
+.heading{
+    margin: 0.5rem 0 0 0 ;
+}
+
 .heading:hover{
     text-decoration: underline;
     cursor: pointer;
@@ -327,33 +327,69 @@ a{
 }
 
 .card{
-    background-color: #232323;
+    
     width: 150px;
+    position: relative;
     border-radius: 0.5rem;
-    padding: 1rem;
-    margin-left: 1.5rem;
-    margin-top: 1rem;
+    padding: 0.7rem;
+    margin-left: 1rem;
 
+}
+
+.music-btn {
+  position: absolute;
+  top: 100px;    
+  left: 100px;    
+  width: 40px;
+  height: 40px;
+  font-size: 3rem;
+  color: #1ed760;
+  background-color: #000;
+  border-radius: 50%;
+  opacity: 0;
+  transform: translateY(5px);
+  transition: all 0.1s ease;
+}
+
+.card:hover{
+    background-color: #232323;
+
+}
+
+.card:hover .music-btn {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .cards-container{
     display: flex;
-    flex-wrap: wrap;
+    padding: 0.5rem;
+    
 }
 
 .card-img{
     width: 100%;
     border-radius: 0.5rem;
+    display: block;
 }
 
 .card-title{
     font-weight: 600;
 }
 
+.last{
+    margin-bottom: 0;
+}
+
+.shows{
+    margin-top: 0.2rem;
+}
+
 .card-info{
     font-size: 0.85rem;
     opacity: 0.8;
 }
+
 
 .footer{
     height: 50px;
@@ -373,16 +409,18 @@ a{
 .end{
     display: flex;
     align-items: center;
-    gap: 100px;
-    padding: 0 2rem 0 2rem;
+    gap: 70px;
+    padding: 0 1.5rem 0 1.5rem; */
 }
+
+
 
 .end-four{
     display: flex;
-    height: 120px;
-    width: 150px;
+    height: 90px;
+    width: 140px;
     justify-content: space-between;
-    align-items: self-start;
+    align-items: self-start; 
 }
 
 .square{
@@ -400,6 +438,13 @@ a{
     cursor: pointer;
 }
 
+.right-sidebar{
+    background-color: black;
+    width: 300px;
+    border-radius: 1rem;
+    padding: 0.5rem;
+}
+
 .right-side-one{
     height: 60px;
 }
@@ -410,22 +455,63 @@ a{
 
 }
 
-.right-side-two{
-    height: 130px;
+
+.right-side-two {
+    height: 200px;
+    position: relative; 
+    overflow: hidden;
 }
 
+
+.right-side-two image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+} 
+
+
+.right-side-two::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 70%; 
+
+    background: linear-gradient(
+        to bottom,
+        rgba(0,0,0,0) 0%,
+        rgba(0,0,0,0.7) 15%,
+        rgba(0,0,0,0.9) 25%,
+        rgba(0,0,0,1) 100%
+    );
+
+    pointer-events: none; 
+} 
+
 .right-side-three{
-    flex: 1;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    padding: 0 34px 0 34px;
+
 }
 
 .right-side-three-1{
-    height: 130px;
-    width: 250px;
+    font-size: 2rem;
+    font-weight: 800;
+    line-height: 2.5rem;
+    
+    
 }
 
 .right-side-three-2{
-    height: 130px;
-    width: 250px;
+    font-size: 0.9rem;
+    color: #b3b3b3;
+    font-weight: 600;
+    line-height: 1.3rem;
 }
 
 .btn{
@@ -435,6 +521,8 @@ a{
     background-color: #1ed760;
     font-size: 1rem;
     font-weight: 750;
+    border: none;
+    
 }
 
 
