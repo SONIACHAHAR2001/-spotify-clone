@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="icon" href="Assets\logo.png" type="image/png">
     <title>Spotify - Web Player: Music for everyone</title>
     <link rel="stylesheet" href="style.css">
@@ -316,7 +316,14 @@
 
 
         <div class="music-player">
-            <div class="empty-one"></div>
+            <div class="empty-one">
+                <img src="Assets/charts17.jpg" class="prem">
+                <div class="empty-one-1">
+                    <p class="empty-one-1a p1">Inner Battle Motivation | Shri Hit Premana</p>
+                    <p class="empty-one-1a p2">Motivational Podcast</p>
+                </div>
+                <i class="fa-solid fa-circle-plus plus"></i>
+            </div>
             <div class="player">
                 <div class="player-controls">
                     <i class="fa-solid fa-shuffle player-control-icon"></i>
@@ -331,7 +338,17 @@
                     <span class="time">3:33</span>
                 </div>
             </div>
-            <div class="controls"></div>
+
+            <div class="controls">
+                <i class="fa-solid fa-microphone controls-1"></i>
+                <i class="fa-solid fa-bars controls-1"></i>
+                <i class="fa-solid fa-computer controls-1"></i>
+                <i class="fa-solid fa-volume-low controls-1" style="margin-right: 0.2rem;"></i>
+                <input type="range" class="control-range" min="0" max="100" step="1">
+                <i class="fa-solid fa-window-restore controls-1"></i>
+                <i class="fa-solid fa-expand controls-1"></i>
+
+            </div>
 
         </div>
 

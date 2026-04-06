@@ -533,6 +533,62 @@ a{
 
 .empty-one{
     width: 25%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.prem{
+    height: 3.5rem;
+    width: 3.5rem;
+    border-radius: 0.3rem;
+}
+
+.empty-one-1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.empty-one-1a{
+    font-size: 0.6rem;
+    margin: 0;
+
+}
+
+.empty-one-1a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.p1{
+    font-size: 0.8rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    margin-right: 0.8rem;
+}
+
+.p2{
+    font-size: 0.7rem;
+    opacity: 0.6;
+    margin-right: 10.5rem;
+}
+
+.p2:hover{
+    opacity: 1;
+}
+
+.plus{
+    font-size: 1.1rem;
+    opacity: 0.6;
+}
+
+.plus:hover{
+    opacity: 1;
+    cursor: pointer;
 }
 
 .player{
@@ -541,6 +597,9 @@ a{
 
 .controls{
     width: 25%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 .player-controls{
@@ -552,7 +611,7 @@ a{
 .player-control-icon{
     font-size: 1rem;
     margin-right: 1.2rem;
-    opacity: 0.5;
+    opacity: 0.6;
 }
 
 .player-control-icon:hover{
@@ -579,6 +638,39 @@ a{
 }
 
 .progress-bar::-webkit-slider-thumb{
+    appearance: none;
+    height: 0.8rem;
+    width: 0.8rem;
+    background-color: #1bd760;
+    border-radius: 50%;
+    margin-top: -6px;
+}
+
+.controls-1{
+    font-size: 1rem;
+    margin-right: 0.8rem;
+    opacity: 0.6;
+}
+
+.controls-1:hover{
+    cursor: pointer;
+    opacity: 1;
+}
+
+.control-range{
+    appearance: none;
+    background-color: transparent;
+    cursor: pointer;
+    margin-right: 0.8rem;
+}
+
+.control-range::-webkit-slider-runnable-track{
+    background-color: #ddd;
+    border-radius: 100px;
+    height: 0.2rem;
+}
+
+.control-range::-webkit-slider-thumb{
     appearance: none;
     height: 0.8rem;
     width: 0.8rem;
