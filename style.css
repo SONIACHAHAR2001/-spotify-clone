@@ -14,14 +14,14 @@ body{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
+  padding: 10px 20px 0 20px;
 }
 
 .spotify{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 2rem;
+    font-size: 2.3rem;
 
 }
 
@@ -33,6 +33,7 @@ body{
     display: flex;
     align-items: center;
     gap: 5px;
+    margin-left: 21rem;
     
 }
 
@@ -180,7 +181,23 @@ body{
     flex: 1;
     border-radius: 1rem;
     overflow: auto;
-    /* padding: 0 1.5rem 0 1.5rem; */
+    margin-top: 0.4rem;
+}
+
+.main-content::-webkit-scrollbar {
+    width: 0px;
+}
+.main-content:hover::-webkit-scrollbar {
+    width: 8px;
+}
+
+.main-content:hover::-webkit-scrollbar-thumb {
+    background-color: rgba(255,255,255,0.3);
+    border-radius: 10px;
+}
+
+.main-content:hover::-webkit-scrollbar-track {
+    background: transparent;
 }
 
 .music-player{
@@ -303,7 +320,7 @@ a{
 .sticky-nav{
     position: sticky;
     top: 0;
-    background-color: #1f1f1f;
+    background-color: #121212;
     display: flex;
     gap: 10px;
     align-items: center;
@@ -410,7 +427,7 @@ a{
     display: flex;
     align-items: center;
     gap: 70px;
-    padding: 0 1.5rem 0 1.5rem; */
+    padding: 0 1.5rem 0 1.5rem;
 }
 
 
@@ -439,14 +456,17 @@ a{
 }
 
 .right-sidebar{
-    background-color: black;
-    width: 300px;
+    width: 285px;
     border-radius: 1rem;
     padding: 0.5rem;
+    background-color: #000;
+    height: 100%;
+    
 }
 
 .right-side-one{
     height: 60px;
+    background-color: #000;
 }
 
 .rightimage{
@@ -457,6 +477,7 @@ a{
 
 
 .right-side-two {
+    background-color: #000;
     height: 200px;
     position: relative; 
     overflow: hidden;
